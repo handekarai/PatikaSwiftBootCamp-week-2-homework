@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PatikaHomeworkTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nha-Un-i5g">
+                                <rect key="frame" x="56.5" y="524" width="301" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="eUe-xG-v6S"/>
+                                    <constraint firstAttribute="width" constant="301" id="z5c-Yc-9t5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <fontDescription key="titleFontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
+                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7k-NP-n5f">
+                                <rect key="frame" x="57" y="351" width="301" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58E-Ne-ojP">
+                                <rect key="frame" x="110" y="144" width="194" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="JYM-Zi-Og4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="45"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="systemOrangeColor"/>
+                                <size key="shadowOffset" width="4" height="-3"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill and submit the form " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRD-A2-DQg">
+                                <rect key="frame" x="120" y="315" width="174" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NRc-e0-do6">
+                                <rect key="frame" x="56.5" y="416" width="301" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wRD-A2-DQg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="4SH-qK-Ctb"/>
+                            <constraint firstItem="nha-Un-i5g" firstAttribute="centerX" secondItem="wRD-A2-DQg" secondAttribute="centerX" id="Af6-Rh-29g"/>
+                            <constraint firstItem="wRD-A2-DQg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="315" id="DdC-cK-FDu"/>
+                            <constraint firstItem="nha-Un-i5g" firstAttribute="leading" secondItem="NRc-e0-do6" secondAttribute="leading" id="FU9-9N-W2Z"/>
+                            <constraint firstItem="W7k-NP-n5f" firstAttribute="top" secondItem="wRD-A2-DQg" secondAttribute="bottom" constant="21" id="HTV-3i-mHi"/>
+                            <constraint firstItem="nha-Un-i5g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MyT-Q4-Rx9"/>
+                            <constraint firstItem="nha-Un-i5g" firstAttribute="trailing" secondItem="W7k-NP-n5f" secondAttribute="trailing" id="OF1-lY-ri5"/>
+                            <constraint firstItem="nha-Un-i5g" firstAttribute="trailing" secondItem="NRc-e0-do6" secondAttribute="trailing" id="QE9-lJ-N0H"/>
+                            <constraint firstItem="nha-Un-i5g" firstAttribute="leading" secondItem="W7k-NP-n5f" secondAttribute="leading" id="Qdt-cb-TD3"/>
+                            <constraint firstItem="nha-Un-i5g" firstAttribute="centerX" secondItem="58E-Ne-ojP" secondAttribute="centerX" id="UO1-9b-mMN"/>
+                            <constraint firstItem="nha-Un-i5g" firstAttribute="top" secondItem="NRc-e0-do6" secondAttribute="bottom" constant="74" id="d81-TY-4ye"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nha-Un-i5g" secondAttribute="bottom" constant="295" id="pS0-6j-7fU"/>
+                            <constraint firstItem="wRD-A2-DQg" firstAttribute="top" secondItem="58E-Ne-ojP" secondAttribute="bottom" constant="59" id="yUt-jh-4r6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="W7k-NP-n5f" id="3UV-i6-7gb"/>
+                        <outlet property="submitButton" destination="nha-Un-i5g" id="bdS-zz-jmg"/>
+                        <outlet property="surnameTextField" destination="NRc-e0-do6" id="naR-bU-xim"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
