@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameTextField.layer.borderColor = UIColor.orange.cgColor
+        nameTextField.layer.borderWidth = 1
+        surnameTextField.layer.borderColor = UIColor.orange.cgColor
+        surnameTextField.layer.borderWidth = 1
         
     }
 
