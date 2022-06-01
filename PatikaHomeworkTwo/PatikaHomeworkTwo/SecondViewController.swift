@@ -27,8 +27,16 @@ class SecondViewController: UIViewController {
         
         let fullName = "\(self.nameTextField.text ?? "Nobody") \(self.surnameTextField.text ?? "Nobody")"
         
-        NotificationCenter.default.post(name: NSNotification.Name("com.hande"), object: nil, userInfo: ["name":fullName])
+        NotificationCenter.default.post(name: .nameNotification,
+                                        object: nil, userInfo: ["name":fullName])
+        
+        self.dismiss(animated: true, completion: nil)
+
     }
     
+}
+
+extension NSNotification.Name{
+    static let nameNotification = Notification.Name.init(rawValue: "nameNotification")
 }
 

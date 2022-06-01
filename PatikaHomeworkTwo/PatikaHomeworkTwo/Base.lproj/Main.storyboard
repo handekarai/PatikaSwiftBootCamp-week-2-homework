@@ -92,9 +92,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMh-9S-8Y2">
-                                <rect key="frame" x="63" y="430" width="289.5" height="36.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMh-9S-8Y2">
+                                <rect key="frame" x="63" y="498" width="289.5" height="36.5"/>
                                 <size key="titleShadowOffset" width="4" height="-3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Go to Form">
@@ -106,10 +105,12 @@
                                     <action selector="formButtonPressed:" destination="PXV-pl-x0e" eventType="touchUpInside" id="BfV-CU-fkX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXP-2s-xfy">
-                                <rect key="frame" x="85" y="211" width="245" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXP-2s-xfy">
+                                <rect key="frame" x="63" y="287" width="245" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="cEb-fw-Xkf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
                                 <color key="textColor" systemColor="systemIndigoColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" systemColor="systemOrangeColor"/>
@@ -118,6 +119,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HP5-WQ-SjV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hXP-2s-xfy" firstAttribute="leading" secondItem="HP5-WQ-SjV" secondAttribute="leading" constant="63" id="0RX-RG-jMM"/>
+                            <constraint firstItem="hXP-2s-xfy" firstAttribute="leading" secondItem="DMh-9S-8Y2" secondAttribute="leading" id="7OD-g1-CmG"/>
+                            <constraint firstItem="HP5-WQ-SjV" firstAttribute="trailing" secondItem="hXP-2s-xfy" secondAttribute="trailing" constant="106" id="TZd-W9-Wgm"/>
+                            <constraint firstItem="hXP-2s-xfy" firstAttribute="top" secondItem="HP5-WQ-SjV" secondAttribute="top" constant="199" id="dUY-Jm-Wrh"/>
+                            <constraint firstItem="DMh-9S-8Y2" firstAttribute="centerX" secondItem="Drw-EI-kPM" secondAttribute="centerX" id="fNe-bO-BY1"/>
+                            <constraint firstItem="HP5-WQ-SjV" firstAttribute="bottom" secondItem="DMh-9S-8Y2" secondAttribute="bottom" constant="327.5" id="zap-VJ-dcM"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vo7-Vw-H9g"/>
                     <connections>

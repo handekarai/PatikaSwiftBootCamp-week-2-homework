@@ -19,25 +19,28 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nameTextLabel.text = name ?? "Hello Nobody"
+        formButton.layer.borderWidth = 3
+        formButton.layer.borderColor = UIColor.systemIndigo.cgColor
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(submitSucces),
-                                               name: NSNotification.Name("com.hande"),
+                                               name: .nameNotification,
                                                object: nil)
-        nameTextLabel.text = name ?? "Hello Nobody"
     }
     
     @IBAction func formButtonPressed(_ sender: Any) {
         
         if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController{
-            navigationController?.pushViewController(vc, animated: true)
+            self.present(vc, animated: true) {
+            }
         }
         
     }
     
     @objc func submitSucces(_ notification:Notification){
         let nameFromForm = notification.userInfo!["name"] as! String
-        self.nameTextLabel.text = nameFromForm
+        self.nameTextLabel.text = "Hello \(nameFromForm)"
         
     }
 
