@@ -16,12 +16,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameTextField.layer.borderColor = UIColor.orange.cgColor
-        nameTextField.layer.borderWidth = 1
+        nameTextField.layer.borderWidth = 2
         surnameTextField.layer.borderColor = UIColor.orange.cgColor
-        surnameTextField.layer.borderWidth = 1
-        
+        surnameTextField.layer.borderWidth = 2
+        submitButton.layer.borderWidth = 3
+        submitButton.layer.borderColor = UIColor.systemIndigo.cgColor
+
     }
 
-
+    @IBAction func submitButtonPressed(_ sender: Any) {
+        if let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController{
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
 }
 
